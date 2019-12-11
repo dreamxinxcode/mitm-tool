@@ -14,4 +14,4 @@ interface_ip = netifaces.ifaddresses(current_interface)[netifaces.AF_INET][0]['a
 net = ipaddress.ip_network(interface_ip)
 netmask = net.netmask
 
-
+print(netmask)
